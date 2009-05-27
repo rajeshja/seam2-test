@@ -6,7 +6,7 @@
 
     <!-- Naming -->
     <property name="Name"                   value="Seam on JBoss Booking Example"/>
-    <property name="example.name"           value="jboss-seam-booking"/>
+    <property name="example.name"           value="jboss-seam-simple"/>
 	
     <!-- Libraries to include -->
     <property name="seam.ui.lib"    value="yes"/>
@@ -15,7 +15,7 @@
     <property name="richfaces.lib"   value="yes"/>
 	
 	<!-- Datasource -->
-    <property name="example.ds"             value="jboss-seam-booking-ds.xml"/>
+    <property name="example.ds"             value="jboss-seam-simple-ds.xml"/>
     
     <import file="${seam.example.home}/build.xml"/>
 </project>

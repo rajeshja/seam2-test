@@ -1,4 +1,3 @@
-//$Id: HotelSearchingAction.java 8998 2008-09-16 03:08:11Z shane.bryzak@jboss.com $
 package org.jboss.seam.example.booking;
 
 import java.util.ArrayList;
@@ -46,7 +45,7 @@ public class SimpleSearchingAction implements SimpleSearching
     }
     
     private void querySimples() {
-        List<Hotel> results = em.createQuery("select s from Simple s where lower(s.name) like #{pattern} or lower(h.description) like #{pattern}")
+        List<Simple> results = em.createQuery("select s from Simple s where lower(s.name) like #{pattern} or lower(s.description) like #{pattern}")
                                 .setMaxResults(pageSize+1)
                                 .setFirstResult(page * pageSize)
                                 .getResultList();
